@@ -151,14 +151,26 @@ export type Certification = {
   issuer: string;
   year?: string;
   inProgress?: boolean;
+  image?: string;
 };
+
 export const certifications: Certification[] = [
-  { name: "ALX Virtual Assistant Programme", issuer: "ALX", year: "2024" },
+  {
+    name: "ALX Virtual Assistant Programme",
+    issuer: "ALX",
+    year: "2024",
+    image: "/Certificates/ALX-Certificate.jpg",
+  },
   {
     name: "CIPDM Certificate",
     issuer: "Chartered Institute of Public Diplomacy and Management",
+    image: "/Certificates/cipdm.jpg",
   },
-  { name: "IBDFM Certificate", issuer: "IBDFM" },
+  {
+    name: "IBDFM Certificate",
+    issuer: "IBDFM",
+    image: "/Certificates/ibdfm.jpg",
+  },
   {
     name: "CIPM Professional Examinations",
     issuer: "Chartered Institute of Personnel Management of Nigeria",
