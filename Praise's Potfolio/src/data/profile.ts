@@ -152,6 +152,7 @@ export type Certification = {
   year?: string;
   inProgress?: boolean;
   image?: string;
+  fit?: "cover" | "contain";
 };
 
 export const certifications: Certification[] = [
@@ -160,6 +161,7 @@ export const certifications: Certification[] = [
     issuer: "ALX",
     year: "2024",
     image: "/Certificates/ALX-Certificate.jpg",
+    fit: "contain",
   },
   {
     name: "CIPDM Certificate",

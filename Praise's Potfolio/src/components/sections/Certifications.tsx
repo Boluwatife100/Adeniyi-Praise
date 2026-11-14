@@ -86,7 +86,11 @@ export default function Certifications() {
                     src={c.image}
                     alt={`${c.name} certificate`}
                     loading="lazy"
-                    className="h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+                    className={`h-full w-full transition duration-700 group-hover:scale-105 ${
+                      c.fit === "contain"
+                        ? "object-contain p-2"
+                        : "object-cover object-top"
+                    }`}
                   />
                   <span className="absolute inset-0 flex items-center justify-center bg-black/0 text-white opacity-0 transition group-hover:bg-black/40 group-hover:opacity-100 group-focus-visible:bg-black/40 group-focus-visible:opacity-100">
                     <ZoomIn className="h-7 w-7" aria-hidden="true" />
